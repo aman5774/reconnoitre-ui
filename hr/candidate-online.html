@@ -1,0 +1,1283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>RECONNOITRE</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <style>
+  body {
+      position: relative;
+		font: 400 15px/1.8 Lato, sans-serif;
+      color: #777;
+	  position:relative;
+	  height:100%;	  
+  }
+  .container1 {
+      padding: 100px 20px;
+  }
+  .navbar{
+      font-family: Montserrat, sans-serif;
+      margin-bottom: 0;
+      background-color: #2d2d30;
+      border: 0;
+      font-size: 11px !important;
+      letter-spacing: 2px;
+      opacity: 0.9;
+	  font-weight:bold;
+  }
+  .navbar li a, .navbar .navbar-brand { 
+      color: #d5d5d5 !important;
+  }
+  .navbar-nav li a:hover {
+      color: #fff !important;
+	  background-color: #fff;
+  }
+  .navbar-nav li.active a {
+      color: #fff !important;
+	  font-size: 13px !important;
+      background-color: #29292c !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+  }
+  
+  footer {
+      background-color: #2d2d30;
+      color: #f5f5f5;
+      padding: 32px;
+  }
+  footer a {
+      color: #f5f5f5;
+  }
+  footer a:hover {
+      color: #777;
+      text-decoration: none;
+  }  
+  .form-control {
+      border-radius: 5px;
+  }
+  textarea{
+  resize:none;
+  }
+ </style>
+</head>
+
+<body>
+
+<nav class="navbar navbar-default  navbar-fixed-top" >
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand">Reconnoitre</a>
+    </div>
+    <div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        
+		<ul class="nav navbar-nav navbar-right">
+        
+		<li>
+          <a><span class="glyphicon glyphicon-user"></span>CANDIDATE <span class="glyphicon glyphicon-triangle-right"></span>AMAN BAJPAI</a>
+        </li>
+        <li><a href="#" id="logout"><span class="glyphicon glyphicon-off"></span> LOGOUT</a></li>
+      </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid container1">
+
+<div class="row">
+    <div class="col-sm-3">
+		<div class="row">
+			<div class="col-sm-2"></div>
+			<div class="col-sm-7">
+				<img src="../images/aman.jpg" class="img-thumbnail text-center" alt="photograph" width="104px" height="36px">
+				<br/>
+			</div>
+			<div class="col-sm-3"></div>
+		</div>
+		<br/>
+		<!-- Trigger the modal with a button (resume) -->
+									<button type="button" class="btn btn-warning btn-lg btn-block" data-toggle="modal" data-target="#myModal">VIEW RESUME/CV</button>
+
+							<!-- Modal -->
+									<div class="modal fade" id="myModal" role="dialog">
+											<div class="modal-dialog">
+    
+											<!-- Modal content-->
+												<div class="modal-content">
+														<div class="modal-header">
+															<button type="button" class="close" data-dismiss="modal">&times;</button>
+															<h4 class="modal-title">RESUME/CV</h4>
+														</div>
+														<div class="modal-body">
+															<div class="embed-responsive embed-responsive-4by3">
+																<iframe class="embed-responsive-item" src="../images/certi.pdf" width="304" height="236"></iframe>
+															</div>
+														</div>
+														<div class="modal-footer">
+															<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+														</div>
+												</div>
+      
+											</div>
+									</div>
+		<br/>
+		
+		<!-- Trigger the modal with a button (personal details) -->
+									<button type="button" class="btn btn-info btn-lg btn-block" data-toggle="modal" data-target="#personal">PERSONAL DETAILS</button>
+
+							<!-- Modal -->
+									<div class="modal fade" id="personal" role="dialog">
+											<div class="modal-dialog">
+    
+											<!-- Modal content-->
+												<div class="modal-content">
+														<div class="modal-header">
+															<button type="button" class="close" data-dismiss="modal">&times;</button>
+															<h4 class="modal-title">PERSONAL DETAILS</h4>
+														</div>
+														<div class="modal-body">
+																<form class="form-horizontal" role="form">
+				<div class="form-group">
+					<label class="control-label col-sm-4" for="title">Title </label>
+					<div class="col-sm-7">
+						<input type="text" maxlength="20" class="form-control" id="title" >
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="control-label col-sm-4" for="firstname">First Name </label>
+					<div class="col-sm-7">
+						<input type="text" maxlength="20" class="form-control" id="firstname" placeholder="Enter First Name">
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="control-label col-sm-4" for="lastname">Last Name </label>
+					<div class="col-sm-7">
+						<input type="text" maxlength="20" class="form-control" id="lastname" placeholder="Enter Last Name">
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="control-label col-sm-4" for="date">Date of Birth </label>
+					<div class="col-sm-7">
+						<input type="text" maxlength="10" class="form-control" id="date" placeholder="DD/MM/YY">
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="control-label col-sm-4" for="gender">Gender </label>
+					<div class="col-sm-7">
+						<input type="text" maxlength="20" class="form-control" id="gender" value="MALE" disabled>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="control-label col-sm-4" for="email">Email </label>
+					<div class="col-sm-7">
+						<input type="email" maxlength="40" class="form-control" id="email" placeholder="Enter Email">
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="control-label col-sm-4" for="alternate-email">Alternate Email</label>
+					<div class="col-sm-7">
+						<input type="email" maxlength="40" class="form-control" id="alt-email" placeholder="Enter Alternate Email">
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="control-label col-sm-4" for="present">Present Address </label>
+					<div class="col-sm-7 ">
+						<textarea class="form-control" id="present" name="present" placeholder="Enter Present Address" rows="3"></textarea>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="control-label col-sm-4" for="permanent">Permanent Address </label>
+					
+					<div class="col-sm-7 ">
+						<textarea class="form-control" id="permanent" name="permanent" placeholder="Enter Permanent Address" rows="3"></textarea>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="control-label col-sm-4" for="pincode">Pin Code </label>
+					<div class="col-sm-7">
+						<input type="text" maxlength="6" class="form-control" id="pincode" placeholder="Enter Pin Code">
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="control-label col-sm-4" for="country">Country </label>
+					<div class="col-sm-7">
+						<input type="text" maxlength="20" class="form-control" id="country" >
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="control-label col-sm-4" for="contact">Contact Number </label>
+					<div class="col-sm-7">
+						<input type="text" maxlength="15" class="form-control" id="contact" placeholder="Enter Contact Number">
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="control-label col-sm-4" for="alt-contact">Alternate Contact Number </label>
+					<div class="col-sm-7">
+						<input type="text" maxlength="15" class="form-control" id="alt-contact" placeholder="Enter Alternate Contact Number">
+					</div>
+				</div>
+				</form>
+														</div>
+														<div class="modal-footer">
+															<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+														</div>
+												</div>
+      
+											</div>
+									</div>
+									<br>
+		<!-- Trigger the modal with a button (academic details) -->
+									<button type="button" class="btn btn-info btn-lg btn-block" data-toggle="modal" data-target="#academic">ACADEMIC DETAILS</button>
+
+							<!-- Modal -->
+									<div class="modal fade" id="academic" role="dialog">
+											<div class="modal-dialog">
+    
+											<!-- Modal content-->
+												<div class="modal-content">
+														<div class="modal-header">
+															<button type="button" class="close" data-dismiss="modal">&times;</button>
+															<h4 class="modal-title">ACADEMIC DETAILS</h4>
+														</div>
+														<div class="modal-body">
+															<form class="form-horizontal" role="form">
+					<p class="text-primary"><u>Class 10<sup>th</sup> Details:</u></p>
+				<div class="form-group">
+					<label class="control-label col-sm-4" for="school-10">School </label>
+					<div class="col-sm-7">
+						<input type="text" maxlength="30" class="form-control" id="school10" placeholder="Enter School">
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="control-label col-sm-4" for="percentage10">Percentage </label>
+					<div class="col-sm-7">
+						<input type="text" maxlength="2" class="form-control" id="percentage10" placeholder="Enter Percentage(%)">
+					</div>
+				</div>
+				<hr>
+				<p class="text-primary"><u>Class 12<sup>th</sup> Details:</u></p>
+				<div class="form-group">
+					<label class="control-label col-sm-4" for="school-12">School </label>
+					<div class="col-sm-7">
+						<input type="text" maxlength="30" class="form-control" id="school12" placeholder="Enter School">
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="control-label col-sm-4" for="percentage12">Percentage </label>
+					<div class="col-sm-7">
+						<input type="text" maxlength="2" class="form-control" id="percentage12" placeholder="Enter Percentage(%)">
+					</div>
+				</div>
+				<hr>
+				<p class="text-primary"><u>Graduation Details:</u></p>
+				<div class="form-group">
+					<label class="control-label col-sm-4" for="college1">College </label>
+					<div class="col-sm-7">
+						<input type="text" maxlength="30" class="form-control" id="college1" placeholder="Enter College">
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="control-label col-sm-4" for="percentage1">Percentage </label>
+					<div class="col-sm-7">
+						<input type="text" maxlength="2" class="form-control" id="percentage1" placeholder="Enter Percentage(%)">
+					</div>
+				</div>
+				<hr>
+				<p class="text-primary"><u>Post Graduation Details:</u></p>
+				<div class="form-group">
+					<label class="control-label col-sm-4" for="college2">College </label>
+					<div class="col-sm-7">
+						<input type="text" maxlength="30" class="form-control" id="college2" placeholder="Enter College">
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="control-label col-sm-4" for="percentage2">Percentage </span></label>
+					<div class="col-sm-7">
+						<input type="text" maxlength="2" class="form-control" id="percentage2" placeholder="Enter Percentage(%)">
+					</div>
+				</div>
+				
+				</form>
+														</div>
+														<div class="modal-footer">
+															<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+														</div>
+												</div>
+      
+											</div>
+									</div>
+									<br>
+		<!-- Trigger the modal with a button (marksheets) -->
+									<button type="button" class="btn btn-info btn-lg btn-block" data-toggle="modal" data-target="#marksheets">MARKSHEETS</button>
+
+							<!-- Modal -->
+									<div class="modal fade" id="marksheets" role="dialog">
+											<div class="modal-dialog">
+    
+											<!-- Modal content-->
+												<div class="modal-content">
+														<div class="modal-header">
+															<button type="button" class="close" data-dismiss="modal">&times;</button>
+															<h4 class="modal-title">MARKSHEETS</h4>
+														</div>
+														<div class="modal-body">
+																<div class="row">
+    
+	<div class="col-sm-12">
+		
+		<p class="text-info">!!! 10<sup>th</sup> , 12<sup>th</sup> & GRADUATION !!!</p>
+		<div class="col-sm-1"></div>
+		<p class="text-danger text-center "><b><u>CLICK ON THE IMAGE TO ZOOM</u></b></p>
+		<br><br>
+		<div class="row">
+			
+			<div class="col-sm-12">
+				<div class="col-sm-4">
+					
+					<div class="panel panel-default text-center" style="width:170px;"">
+						<div class="panel-heading">10<sup>th</sup> </div>
+						<div class="panel-body " >
+								<img src="img/10.jpg" class="img-thumbnail"data-toggle="modal" data-target="#marksheet"  alt="marksheet" width="304" height="236" span style="cursor:pointer"></span>
+								
+									
+
+							
+									<div class="modal fade" id="marksheet" role="dialog">
+											<div class="modal-dialog">
+    
+											
+												<div class="modal-content">
+														<div class="modal-header">
+															<button type="button" class="close" data-dismiss="modal">&times;</button>
+															<h4 class="modal-title">10<sup>th</sup> Marksheet</h4>
+														</div>
+														<div class="modal-body">
+															<img src="img/10.jpg" class="img-thumbnail"data-toggle="modal" data-target="#marksheet"  alt="marksheet" width="704" height="436" span style="cursor:pointer"></span>
+														</div>
+														<div class="modal-footer">
+															<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+														</div>
+												</div>
+      
+											</div>
+									</div>
+						</div>
+						
+					</div>
+				
+			</div>
+			<div class="col-sm-4">
+					
+					<div class="panel panel-default text-center" style="width:170px;">
+						<div class="panel-heading">12<sup>th</sup> </div>
+						<div class="panel-body " >
+								<img src="img/10.jpg" class="img-thumbnail"data-toggle="modal" data-target="#marksheet1"  alt="marksheet" width="304" height="236" span style="cursor:pointer"></span>
+								
+									
+
+							
+									<div class="modal fade" id="marksheet1" role="dialog">
+											<div class="modal-dialog">
+    
+											
+												<div class="modal-content">
+														<div class="modal-header">
+															<button type="button" class="close" data-dismiss="modal">&times;</button>
+															<h4 class="modal-title">12<sup>th</sup> Marksheet</h4>
+														</div>
+														<div class="modal-body">
+															<img src="img/10.jpg" class="img-thumbnail"data-toggle="modal" data-target="#marksheet1"  alt="marksheet" width="704" height="436" span style="cursor:pointer"></span>
+														</div>
+														<div class="modal-footer">
+															<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+														</div>
+												</div>
+      
+											</div>
+									</div>
+						</div>
+						
+					</div>
+				
+			</div>
+			<div class="col-sm-4">
+					
+					<div class="panel panel-default text-center" style="width:170px;">
+						<div class="panel-heading">1<sup>st</sup> Semester</div>
+						<div class="panel-body " >
+							<img src="img/grad.jpg" class="img-thumbnail"data-toggle="modal" data-target="#marksheet2"  alt="marksheet" width="304" height="136" span style="cursor:pointer"></span>
+								
+									
+
+							
+									<div class="modal fade" id="marksheet2" role="dialog">
+											<div class="modal-dialog">
+    
+											
+												<div class="modal-content">
+														<div class="modal-header">
+															<button type="button" class="close" data-dismiss="modal">&times;</button>
+															<h4 class="modal-title">1<sup>st</sup>Semester Marksheet</h4>
+														</div>
+														<div class="modal-body">
+															<img src="img/grad.jpg" class="img-thumbnail"data-toggle="modal" data-target="#marksheet2"  alt="marksheet" width="704" height="436" span style="cursor:pointer"></span>
+														</div>
+														<div class="modal-footer">
+															<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+														</div>
+												</div>
+      
+											</div>
+									</div>
+						</div>
+						
+					</div>
+				
+			</div>
+			</div>
+		</div>
+		<br><br>
+		<div class="row">
+			
+			<div class="col-sm-12">
+				<div class="col-sm-4">
+					
+					<div class="panel panel-default text-center" style="width:170px;">
+						<div class="panel-heading">2<sup>nd</sup> Semester </div>
+						<div class="panel-body " >
+							<img src="img/grad.jpg" class="img-thumbnail"data-toggle="modal" data-target="#marksheet3"  alt="marksheet" width="304" height="136" span style="cursor:pointer"></span>
+								
+									
+
+							
+									<div class="modal fade" id="marksheet3" role="dialog">
+											<div class="modal-dialog">
+    
+											
+												<div class="modal-content">
+														<div class="modal-header">
+															<button type="button" class="close" data-dismiss="modal">&times;</button>
+															<h4 class="modal-title">2<sup>nd</sup>Semester Marksheet</h4>
+														</div>
+														<div class="modal-body">
+															<img src="img/grad.jpg" class="img-thumbnail"data-toggle="modal" data-target="#marksheet3"  alt="marksheet" width="704" height="436" span style="cursor:pointer"></span>
+														</div>
+														<div class="modal-footer">
+															<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+														</div>
+												</div>
+      
+											</div>
+									</div>
+						</div>
+						
+					</div>
+				
+				</div>
+				<div class="col-sm-4">
+					
+					<div class="panel panel-default text-center" style="width:170px;">
+						<div class="panel-heading">3<sup>rd</sup> Semester </div>
+						<div class="panel-body " >
+							<img src="img/grad.jpg" class="img-thumbnail"data-toggle="modal" data-target="#marksheet4"  alt="marksheet" width="304" height="136" span style="cursor:pointer"></span>
+								
+									
+
+							
+									<div class="modal fade" id="marksheet4" role="dialog">
+											<div class="modal-dialog">
+    
+											
+												<div class="modal-content">
+														<div class="modal-header">
+															<button type="button" class="close" data-dismiss="modal">&times;</button>
+															<h4 class="modal-title">3<sup>rd</sup> Semester Marksheet</h4>
+														</div>
+														<div class="modal-body">
+															<img src="img/grad.jpg" class="img-thumbnail"data-toggle="modal" data-target="#marksheet4"  alt="marksheet" width="704" height="436" span style="cursor:pointer"></span>
+														</div>
+														<div class="modal-footer">
+															<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+														</div>
+												</div>
+      
+											</div>
+									</div>
+						</div>
+						
+					</div>
+				
+				</div>
+				<div class="col-sm-4">
+					
+					<div class="panel panel-default text-center" style="width:170px;">
+						<div class="panel-heading">4<sup>th</sup> Semester </div>
+						<div class="panel-body " >
+							<img src="img/grad.jpg" class="img-thumbnail"data-toggle="modal" data-target="#marksheet5"  alt="marksheet" width="304" height="136" span style="cursor:pointer"></span>
+								
+									
+
+							
+									<div class="modal fade" id="marksheet5" role="dialog">
+											<div class="modal-dialog">
+    
+											
+												<div class="modal-content">
+														<div class="modal-header">
+															<button type="button" class="close" data-dismiss="modal">&times;</button>
+															<h4 class="modal-title">4<sup>th</sup> Semester Marksheet</h4>
+														</div>
+														<div class="modal-body">
+															<img src="img/grad.jpg" class="img-thumbnail"data-toggle="modal" data-target="#marksheet5"  alt="marksheet" width="704" height="436" span style="cursor:pointer"></span>
+														</div>
+														<div class="modal-footer">
+															<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+														</div>
+												</div>
+      
+											</div>
+									</div>
+						</div>
+						
+					</div>
+				
+				</div>
+			</div>
+		</div>
+		
+		<br><br>
+		<div class="row">
+			
+			<div class="col-sm-12">
+				<div class="col-sm-4">
+					
+					<div class="panel panel-default text-center" style="width:170px;">
+						<div class="panel-heading">5<sup>th</sup> Semester </div>
+						<div class="panel-body " >
+							<img src="img/grad.jpg" class="img-thumbnail"data-toggle="modal" data-target="#marksheet6"  alt="marksheet" width="304" height="136" span style="cursor:pointer"></span>
+								
+									
+
+							
+									<div class="modal fade" id="marksheet6" role="dialog">
+											<div class="modal-dialog">
+    
+											
+												<div class="modal-content">
+														<div class="modal-header">
+															<button type="button" class="close" data-dismiss="modal">&times;</button>
+															<h4 class="modal-title">5<sup>th</sup>Semester Marksheet</h4>
+														</div>
+														<div class="modal-body">
+															<img src="img/grad.jpg" class="img-thumbnail"data-toggle="modal" data-target="#marksheet6"  alt="marksheet" width="704" height="436" span style="cursor:pointer"></span>
+														</div>
+														<div class="modal-footer">
+															<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+														</div>
+												</div>
+      
+											</div>
+									</div>
+						</div>
+						
+					</div>
+				
+				</div>
+				<div class="col-sm-4">
+					
+					<div class="panel panel-default text-center" style="width:170px;">
+						<div class="panel-heading">6<sup>th</sup> Semester </div>
+						<div class="panel-body " >
+							<img src="img/grad.jpg" class="img-thumbnail"data-toggle="modal" data-target="#marksheet7"  alt="marksheet" width="304" height="136" span style="cursor:pointer"></span>
+								
+									
+
+							
+									<div class="modal fade" id="marksheet7" role="dialog">
+											<div class="modal-dialog">
+    
+											
+												<div class="modal-content">
+														<div class="modal-header">
+															<button type="button" class="close" data-dismiss="modal">&times;</button>
+															<h4 class="modal-title">6<sup>th</sup>Semester Marksheet</h4>
+														</div>
+														<div class="modal-body">
+															<img src="img/grad.jpg" class="img-thumbnail"data-toggle="modal" data-target="#marksheet7"  alt="marksheet" width="704" height="436" span style="cursor:pointer"></span>
+														</div>
+														<div class="modal-footer">
+															<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+														</div>
+												</div>
+      
+											</div>
+									</div>
+						</div>
+						
+					</div>
+				
+				</div>
+				<div class="col-sm-4">
+					
+					<div class="panel panel-default text-center" style="width:170px;">
+						<div class="panel-heading">7<sup>th</sup> Semester </div>
+						<div class="panel-body " >
+							<img src="img/grad.jpg" class="img-thumbnail"data-toggle="modal" data-target="#marksheet8"  alt="marksheet" width="304" height="136" span style="cursor:pointer"></span>
+								
+									
+
+							
+									<div class="modal fade" id="marksheet8" role="dialog">
+											<div class="modal-dialog">
+    
+											
+												<div class="modal-content">
+														<div class="modal-header">
+															<button type="button" class="close" data-dismiss="modal">&times;</button>
+															<h4 class="modal-title">7<sup>th</sup>Semester Marksheet</h4>
+														</div>
+														<div class="modal-body">
+															<img src="img/grad.jpg" class="img-thumbnail"data-toggle="modal" data-target="#marksheet8"  alt="marksheet" width="704" height="436" span style="cursor:pointer"></span>
+														</div>
+														<div class="modal-footer">
+															<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+														</div>
+												</div>
+      
+											</div>
+									</div>
+						</div>
+						
+					</div>
+				
+				</div>
+			</div>
+		</div>
+		
+		<br><br>
+		<div class="row">
+			
+			<div class="col-sm-12">
+				
+				<div class="col-sm-4">
+					
+					<div class="panel panel-default text-center" style="width:170px;">
+						<div class="panel-heading">8<sup>th</sup> Semester </div>
+						<div class="panel-body " >
+							<img src="img/grad.jpg" class="img-thumbnail"data-toggle="modal" data-target="#marksheet9"  alt="marksheet" width="304" height="136" span style="cursor:pointer"></span>
+								
+									
+
+							
+									<div class="modal fade" id="marksheet9" role="dialog">
+											<div class="modal-dialog">
+    
+											
+												<div class="modal-content">
+														<div class="modal-header">
+															<button type="button" class="close" data-dismiss="modal">&times;</button>
+															<h4 class="modal-title">8<sup>th</sup>Semester Marksheet</h4>
+														</div>
+														<div class="modal-body">
+															<img src="img/grad.jpg" class="img-thumbnail"data-toggle="modal" data-target="#marksheet9"  alt="marksheet" width="704" height="436" span style="cursor:pointer"></span>
+														</div>
+														<div class="modal-footer">
+															<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+														</div>
+												</div>
+      
+											</div>
+									</div>
+						</div>
+						
+					</div>
+				
+				</div>
+			</div>
+		</div>
+		
+		<hr>
+		
+		
+		<div class="col-sm-1"></div>
+		<p class="text-info"><u>!!! POST GRADUATION !!!</u></p>
+		<br><br>
+		<div class="row">
+			
+			<div class="col-sm-12">
+				<div class="col-sm-4">
+					
+					<div class="panel panel-default text-center" style="width:170px;">
+						<div class="panel-heading">1<sup>st</sup> Semester </div>
+						<div class="panel-body " >
+							<img src="img/grad.jpg" class="img-thumbnail"data-toggle="modal" data-target="#marksheet10"  alt="marksheet" width="304" height="136" span style="cursor:pointer"></span>
+								
+									
+
+							
+									<div class="modal fade" id="marksheet10" role="dialog">
+											<div class="modal-dialog">
+    
+											
+												<div class="modal-content">
+														<div class="modal-header">
+															<button type="button" class="close" data-dismiss="modal">&times;</button>
+															<h4 class="modal-title">1<sup>st</sup>Semester Marksheet</h4>
+														</div>
+														<div class="modal-body">
+															<img src="img/grad.jpg" class="img-thumbnail"data-toggle="modal" data-target="#marksheet10"  alt="marksheet" width="704" height="436" span style="cursor:pointer"></span>
+														</div>
+														<div class="modal-footer">
+															<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+														</div>
+												</div>
+      
+											</div>
+									</div>
+						</div>
+						
+					</div>
+				
+				</div>
+				<div class="col-sm-4">
+					
+					<div class="panel panel-default text-center" style="width:170px;">
+						<div class="panel-heading">2<sup>nd</sup> Semester </div>
+						<div class="panel-body " >
+							<img src="img/grad.jpg" class="img-thumbnail"data-toggle="modal" data-target="#marksheet11"  alt="marksheet" width="304" height="136" span style="cursor:pointer"></span>
+								
+									
+
+							
+									<div class="modal fade" id="marksheet11" role="dialog">
+											<div class="modal-dialog">
+    
+											
+												<div class="modal-content">
+														<div class="modal-header">
+															<button type="button" class="close" data-dismiss="modal">&times;</button>
+															<h4 class="modal-title">2<sup>nd</sup>Semester Marksheet</h4>
+														</div>
+														<div class="modal-body">
+															<img src="img/grad.jpg" class="img-thumbnail"data-toggle="modal" data-target="#marksheet11"  alt="marksheet" width="704" height="436" span style="cursor:pointer"></span>
+														</div>
+														<div class="modal-footer">
+															<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+														</div>
+												</div>
+      
+											</div>
+									</div>
+						</div>
+						
+					</div>
+				
+				</div>
+				<div class="col-sm-4">
+					
+					<div class="panel panel-default text-center" style="width:170px;">
+						<div class="panel-heading">3<sup>rd</sup> Semester </div>
+						<div class="panel-body " >
+							<img src="img/grad.jpg" class="img-thumbnail"data-toggle="modal" data-target="#marksheet12"  alt="marksheet" width="304" height="136" span style="cursor:pointer"></span>
+								
+									
+
+							
+									<div class="modal fade" id="marksheet12" role="dialog">
+											<div class="modal-dialog">
+    
+											
+												<div class="modal-content">
+														<div class="modal-header">
+															<button type="button" class="close" data-dismiss="modal">&times;</button>
+															<h4 class="modal-title">3<sup>rd</sup>Semester Marksheet</h4>
+														</div>
+														<div class="modal-body">
+															<img src="img/grad.jpg" class="img-thumbnail"data-toggle="modal" data-target="#marksheet12"  alt="marksheet" width="704" height="436" span style="cursor:pointer"></span>
+														</div>
+														<div class="modal-footer">
+															<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+														</div>
+												</div>
+      
+											</div>
+									</div>
+						</div>
+						
+					</div>
+				
+				</div>
+			</div>
+		</div>
+		
+		<br><br>
+		<div class="row">
+			
+			<div class="col-sm-12">
+				<div class="col-sm-4">
+					
+					<div class="panel panel-default text-center" style="width:170px;">
+						<div class="panel-heading">4<sup>th</sup> Semester </div>
+						<div class="panel-body " >
+							<img src="img/grad.jpg" class="img-thumbnail"data-toggle="modal" data-target="#marksheet13"  alt="marksheet" width="304" height="136" span style="cursor:pointer"></span>
+								
+									
+
+							
+									<div class="modal fade" id="marksheet13" role="dialog">
+											<div class="modal-dialog">
+    
+											
+												<div class="modal-content">
+														<div class="modal-header">
+															<button type="button" class="close" data-dismiss="modal">&times;</button>
+															<h4 class="modal-title">4<sup>th</sup>Semester Marksheet</h4>
+														</div>
+														<div class="modal-body">
+															<img src="img/grad.jpg" class="img-thumbnail"data-toggle="modal" data-target="#marksheet13"  alt="marksheet" width="704" height="436" span style="cursor:pointer"></span>
+														</div>
+														<div class="modal-footer">
+															<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+														</div>
+												</div>
+      
+											</div>
+									</div>
+						</div>
+						
+					</div>
+				
+				</div>
+				<div class="col-sm-4">
+					
+					<div class="panel panel-default text-center" style="width:170px;">
+						<div class="panel-heading">5<sup>th</sup> Semester</div>
+						<div class="panel-body " >
+							<img src="img/grad.jpg" class="img-thumbnail"data-toggle="modal" data-target="#marksheet14"  alt="marksheet" width="304" height="136" span style="cursor:pointer"></span>
+								
+									
+
+							
+									<div class="modal fade" id="marksheet14" role="dialog">
+											<div class="modal-dialog">
+    
+											
+												<div class="modal-content">
+														<div class="modal-header">
+															<button type="button" class="close" data-dismiss="modal">&times;</button>
+															<h4 class="modal-title">5<sup>th</sup>Semester Marksheet</h4>
+														</div>
+														<div class="modal-body">
+															<img src="img/grad.jpg" class="img-thumbnail"data-toggle="modal" data-target="#marksheet14"  alt="marksheet" width="704" height="436" span style="cursor:pointer"></span>
+														</div>
+														<div class="modal-footer">
+															<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+														</div>
+												</div>
+      
+											</div>
+									</div>
+						</div>
+						
+					</div>
+				
+				</div>
+				<div class="col-sm-4">
+					
+					<div class="panel panel-default text-center" style="width:170px;">
+						<div class="panel-heading">6<sup>th</sup> Semester </div>
+						<div class="panel-body " >
+							<img src="img/grad.jpg" class="img-thumbnail"data-toggle="modal" data-target="#marksheet15"  alt="marksheet" width="304" height="136" span style="cursor:pointer"></span>
+								
+									
+
+							
+									<div class="modal fade" id="marksheet15" role="dialog">
+											<div class="modal-dialog">
+    
+											
+												<div class="modal-content">
+														<div class="modal-header">
+															<button type="button" class="close" data-dismiss="modal">&times;</button>
+															<h4 class="modal-title">6<sup>th</sup>Semester Marksheet</h4>
+														</div>
+														<div class="modal-body">
+															<img src="img/grad.jpg" class="img-thumbnail"data-toggle="modal" data-target="#marksheet15"  alt="marksheet" width="704" height="436" span style="cursor:pointer"></span>
+														</div>
+														<div class="modal-footer">
+															<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+														</div>
+												</div>
+      
+											</div>
+									</div>
+								
+						</div>
+						
+					</div>
+				
+				</div>
+			</div>
+		</div>
+		
+	</div>
+														</div>
+														<div class="modal-footer">
+															<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+														</div>
+												</div>
+      
+											</div>
+									</div></div>
+									<br>
+		<!-- Trigger the modal with a button (certificates) -->
+									<button type="button" class="btn btn-info btn-lg btn-block" data-toggle="modal" data-target="#certificates">CERTIFICATES</button>
+
+							<!-- Modal -->
+									<div class="modal fade" id="certificates" role="dialog">
+											<div class="modal-dialog">
+    
+											<!-- Modal content-->
+												<div class="modal-content">
+														<div class="modal-header">
+															<button type="button" class="close" data-dismiss="modal">&times;</button>
+															<h4 class="modal-title">CERTIFICATES</h4>
+														</div>
+														<div class="modal-body">
+															<div class="row">
+    
+	<div class="col-sm-12">
+		
+		<br>
+			
+		
+		<p class="text-danger text-center "><b><u>CLICK ON THE IMAGE TO ZOOM</u></b></p>
+		<br><br>
+		<div class="row">
+			
+			<div class="col-sm-12">
+				<div class="col-sm-4">
+					
+					<div class="panel panel-default text-center" style="width:170px;">
+						<div class="panel-heading">Certificate 1</div>
+						<div class="panel-body " >
+							<img src="img/10.jpg" class="img-thumbnail" data-toggle="modal" data-target="#certificate1"  alt="certificate" width="204" height="136" span style="cursor:pointer"></span>
+								
+									
+
+							
+									<div class="modal fade" id="certificate1" role="dialog">
+											<div class="modal-dialog">
+    
+											
+												<div class="modal-content">
+														<div class="modal-header">
+															<button type="button" class="close" data-dismiss="modal">&times;</button>
+															<h4 class="modal-title">Certificate 1</h4>
+														</div>
+														<div class="modal-body">
+															<img src="img/10.jpg" class="img-thumbnail"data-toggle="modal" data-target="#certificate1"  alt="certificate" width="704" height="436" span style="cursor:pointer"></span>
+														</div>
+														<div class="modal-footer">
+															<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+														</div>
+												</div>
+      
+											</div>
+									</div>
+						</div>
+						
+					</div>
+				
+				</div>
+				<div class="col-sm-4">
+					
+					<div class="panel panel-default text-center" style="width:170px;">
+						<div class="panel-heading">Certificate 2</div>
+						<div class="panel-body " >
+							<img src="img/10.jpg" class="img-thumbnail"data-toggle="modal" data-target="#certificate2"  alt="certificate" width="304" height="236" span style="cursor:pointer"></span>
+								
+									
+
+							
+									<div class="modal fade" id="certificate2" role="dialog">
+											<div class="modal-dialog">
+    
+											
+												<div class="modal-content">
+														<div class="modal-header">
+															<button type="button" class="close" data-dismiss="modal">&times;</button>
+															<h4 class="modal-title">Certificate 2</h4>
+														</div>
+														<div class="modal-body">
+															<img src="img/10.jpg" class="img-thumbnail"data-toggle="modal" data-target="#certificate2"  alt="certificate" width="704" height="436" span style="cursor:pointer"></span>
+														</div>
+														<div class="modal-footer">
+															<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+														</div>
+												</div>
+      
+											</div>
+									</div>
+						</div>
+						
+					</div>
+				
+				</div>
+				<div class="col-sm-4">
+					
+					<div class="panel panel-default text-center" style="width:170px;">
+						<div class="panel-heading">Certificate 3</div>
+						<div class="panel-body " >
+							<img src="img/10.jpg" class="img-thumbnail"data-toggle="modal" data-target="#certificate3"  alt="certificate" width="304" height="236" span style="cursor:pointer"></span>
+								
+									
+
+							
+									<div class="modal fade" id="certificate3" role="dialog">
+											<div class="modal-dialog">
+    
+											
+												<div class="modal-content">
+														<div class="modal-header">
+															<button type="button" class="close" data-dismiss="modal">&times;</button>
+															<h4 class="modal-title">Certificate 3</h4>
+														</div>
+														<div class="modal-body">
+															<img src="img/10.jpg" class="img-thumbnail"data-toggle="modal" data-target="#certificate3"  alt="certificate" width="704" height="436" span style="cursor:pointer"></span>
+														</div>
+														<div class="modal-footer">
+															<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+														</div>
+												</div>
+      
+											</div>
+									</div>
+						</div>
+						
+					</div>
+				
+				</div>
+			</div>
+		</div>
+		
+		<br><br>
+		<div class="row">
+			
+			<div class="col-sm-12">
+				<div class="col-sm-4">
+					
+					<div class="panel panel-default text-center" style="width:170px;">
+						<div class="panel-heading">Certificate 4</div>
+						<div class="panel-body " >
+							<img src="img/10.jpg" class="img-thumbnail"data-toggle="modal" data-target="#certificate4"  alt="certificate" width="304" height="236" span style="cursor:pointer"></span>
+								
+									
+
+							
+									<div class="modal fade" id="certificate4" role="dialog">
+											<div class="modal-dialog">
+    
+											
+												<div class="modal-content">
+														<div class="modal-header">
+															<button type="button" class="close" data-dismiss="modal">&times;</button>
+															<h4 class="modal-title">Certificate 4</h4>
+														</div>
+														<div class="modal-body">
+															<img src="img/10.jpg" class="img-thumbnail"data-toggle="modal" data-target="#certificate4"  alt="certificate" width="704" height="436" span style="cursor:pointer"></span>
+														</div>
+														<div class="modal-footer">
+															<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+														</div>
+												</div>
+      
+											</div>
+									</div>
+						</div>
+						
+					</div>
+				
+				</div>
+				<div class="col-sm-4">
+					
+					<div class="panel panel-default text-center" style="width:170px;">
+						<div class="panel-heading">Certificate 5</div>
+						<div class="panel-body " >
+							<img src="img/10.jpg" class="img-thumbnail"data-toggle="modal" data-target="#certificate5"  alt="certificate" width="304" height="236" span style="cursor:pointer"></span>
+								
+									
+
+							
+									<div class="modal fade" id="certificate5" role="dialog">
+											<div class="modal-dialog">
+    
+											
+												<div class="modal-content">
+														<div class="modal-header">
+															<button type="button" class="close" data-dismiss="modal">&times;</button>
+															<h4 class="modal-title">Certificate 5</h4>
+														</div>
+														<div class="modal-body">
+															<img src="img/10.jpg" class="img-thumbnail"data-toggle="modal" data-target="#certificate5"  alt="certificate" width="704" height="436" span style="cursor:pointer"></span>
+														</div>
+														<div class="modal-footer">
+															<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+														</div>
+												</div>
+      
+											</div>
+									</div>
+						</div>
+						
+					</div>
+				
+				</div>
+				<div class="col-sm-4">
+					
+					<div class="panel panel-default text-center" style="width:170px;">
+						<div class="panel-heading">Certificate 6</div>
+						<div class="panel-body " >
+							<img src="img/10.jpg" class="img-thumbnail"data-toggle="modal" data-target="#certificate6"  alt="certificate" width="304" height="236" span style="cursor:pointer"></span>
+								
+									
+
+							
+									<div class="modal fade" id="certificate6" role="dialog">
+											<div class="modal-dialog">
+    
+											
+												<div class="modal-content">
+														<div class="modal-header">
+															<button type="button" class="close" data-dismiss="modal">&times;</button>
+															<h4 class="modal-title">Certificate 6</h4>
+														</div>
+														<div class="modal-body">
+															<img src="img/10.jpg" class="img-thumbnail"data-toggle="modal" data-target="#certificate6"  alt="certificate" width="704" height="436" span style="cursor:pointer"></span>
+														</div>
+														<div class="modal-footer">
+															<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+														</div>
+												</div>
+      
+											</div>
+									</div>
+						</div>
+						
+					</div>
+				
+				</div>
+			</div>
+		</div>
+		
+
+		
+	</div>
+</div>
+														</div>
+														<div class="modal-footer">
+															<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+														</div>
+												</div>
+      
+											</div>
+									</div>
+									
+		
+		
+	
+	
+	</div>
+	<div class="col-sm-9">
+		<ul class="nav nav-pills text-center" style="background-color:#D0D0D0; color:black;">
+					<li class="active"><a>ONLINE TEST</a></li>
+					<li ><a href="candidate-gd.html" style="color:black;">GROUP DISCUSSION</a></li>
+					<li class="disabled"><a  style="color:black;">TECHNICAL 1</a></li>
+					<li class="disabled"><a  style="color:black;">TECHNICAL 2</a></li>
+					<li class="disabled"><a  style="color:black;">HR INTERVIEW</a></li>
+		</ul>
+		
+		<br><br>
+	<table class="table table-hover table-bordered table-responsive text-center">
+    <thead>
+      <tr class="info">
+        <th>SECTION DETAILS</th>
+        <th>SCORE(OUT OF)</th>
+		<th>TIME TAKEN(OUT OF)</th>
+		</tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Quantitative Aptitude</td>
+        <td>10(16)</td>
+		<td>16(16)</td>
+		
+      </tr>
+      <tr>
+        <td>Logical Reasoning</td>
+        <td></td>
+		<td></td>
+		
+      </tr>
+      <tr>
+        <td>Verbal Ability</td>
+        <td></td>
+		<td></td>
+		
+      </tr>
+	  <tr>
+        <td>Technical Skills</td>
+        <td></td>
+		<td></td>
+		
+      </tr>
+	  <tr>
+        <td>Programming Round</td>
+        <td></td>
+		<td></td>
+		
+      </tr>
+	  <tr>
+        <td>Essay Writing</td>
+        <td></td>
+		<td></td>
+		
+      </tr>
+	 
+	  
+    </tbody>
+  </table>
+	</div>
+	
+	
+</div>
+
+</div>
+
+
+<!-- Footer -->
+<footer class="text-center container-fluid">
+  
+  
+  <p> Copyright &copy; &nbsp;www.reconnoitre.com</p> 
+</footer>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>RECONNOITRE</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <style>
+  body {
+      position: relative;
+		font: 400 15px/1.8 Lato, sans-serif;
+      color: #777;
+	  position:relative;
+	  height:100%;	  
+  }
+  .container1 {
+      padding: 100px 20px;
+  }
+  .navbar{
+      font-family: Montserrat, sans-serif;
+      margin-bottom: 0;
+      background-color: #2d2d30;
+      border: 0;
+      font-size: 11px !important;
+      letter-spacing: 2px;
+      opacity: 0.9;
+	  font-weight:bold;
+  }
+  .navbar li a, .navbar .navbar-brand { 
+      color: #d5d5d5 !important;
+  }
+  .navbar-nav li a:hover {
+      color: #fff !important;
+	  background-color: #fff;
+  }
+  .navbar-nav li.active a {
+      color: #fff !important;
+	  font-size: 13px !important;
+      background-color: #29292c !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+  }
+  .open .dropdown-toggle {
+      color: #fff;
+      background-color: #555 !important;
+  }
+  .dropdown-menu li a {
+      color: #000 !important;
+  }
+  .dropdown-menu li a:hover {
+      background-color: grey !important;
+  }
+  footer {
+      background-color: #2d2d30;
+      color: #f5f5f5;
+      padding: 32px;
+  }
+  footer a {
+      color: #f5f5f5;
+  }
+  footer a:hover {
+      color: #777;
+      text-decoration: none;
+  }  
+  .form-control {
+      border-radius: 5px;
+  }
+  textarea{
+  resize:none;
+  }
+ </style>
+</head>
+
+<body>
+
+<nav class="navbar navbar-default  navbar-fixed-top" >
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand">Reconnoitre</a>
+    </div>
+    <div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        
+		<ul class="nav navbar-nav navbar-right">
+        
+		<li>
+          <a><span class="glyphicon glyphicon-user"></span>Hi,INTERVIEWER</a>
+        </li>
+        <li><a href="#" id="logout"><span class="glyphicon glyphicon-off"></span> LOGOUT</a></li>
+      </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid container1">
+
+<div class="row">
+    <div class="col-sm-3">
+		<ul class="nav nav-pills nav-stacked" style="background-color:#F8F8F8;">
+			<li class=" active text-center"><a href="gd-panel.html"><span class="glyphicon glyphicon-menu-left"></span> GO TO GD PANELS</a></li>
+		</ul>
+	</div>
+	<div class="col-sm-9"></div>
+</div>
+<br><br>
+<div class="row">
+	
+	<div class="col-sm-12">
+	<table class="table table-hover table-bordered table-responsive">
+    <thead>
+      <tr class="info">
+        <th>S.No.</th>
+        <th>Name</th>
+		<th>Photo</th>
+		<th>Score(max 10)</th>
+		<th>Comments</th>
+		<th>Result</th>
+		<th>Submit</th>
+		
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="background-color:lightgreen;">
+		<form role="form" >
+        <td>1</td>
+        <td>AMAN BAJPAI</td>
+		<td>
+			<img src="../images/aman.jpg" class="img-thumbnail text-center" alt="photograph" width="94px" height="22px">
+		</td>
+		<td>
+					
+					<div class="col-sm-12">
+						<br><br>
+						<input type="text" maxlength="2" class="form-control" id="score" placeholder="Enter Score (max 10)">
+					</div>
+		</td>
+		<td>
+					<div class="col-sm-12 ">
+						
+						<textarea class="form-control" id="comment" name="comment" placeholder="Comment Here" rows="4"></textarea>
+					</div>
+		</td>
+		<td>
+		
+							<div class="col-sm-12 ">
+							
+								<label class="radio text-success">
+									&nbsp;<input type="radio" name="result">SELECTED
+								</label>
+								<hr>
+								<label class="radio text-danger">
+									&nbsp;<input type="radio" name="result">REJECTED
+								</label>
+							</div>
+		</td>
+		<td>
+			<br><br>
+			<button type="submit" class="btn btn-success">SUBMIT</button>
+		</td>
+		</form>
+      </tr>
+      <tr>
+        <form role="form" >
+        <td>2</td>
+        <td>ABHISHEK RAWAT</td>
+		<td>
+			<img src="../images/abhishek.jpg" class="img-thumbnail text-center" alt="photograph" width="94px" height="22px">
+		</td>
+		<td>
+					
+					<div class="col-sm-12">
+						<br><br>
+						<input type="text" maxlength="2" class="form-control" id="score" placeholder="Enter Score (max 10)">
+					</div>
+		</td>
+		<td>
+					<div class="col-sm-12 ">
+						
+						<textarea class="form-control" id="comment" name="comment" placeholder="Comment Here" rows="4"></textarea>
+					</div>
+		</td>
+		<td>
+		
+							<div class="col-sm-12 ">
+							
+								<label class="radio text-success">
+									&nbsp;<input type="radio" name="result">SELECTED
+								</label>
+								<hr>
+								<label class="radio text-danger">
+									&nbsp;<input type="radio" name="result">REJECTED
+								</label>
+							</div>
+		</td>
+		<td>
+			<br><br>
+			<button type="submit" class="btn btn-success">SUBMIT</button>
+		</td>
+		</form>
+      </tr>
+      <tr style="background-color:red;">
+        <form role="form" >
+        <td>3</td>
+        <td>ANUJ SABARWAL</td>
+		<td>
+			<img src="../images/anuj.jpg" class="img-thumbnail text-center" alt="photograph" width="94px" height="22px">
+		</td>
+		<td>
+					
+					<div class="col-sm-12">
+						<br><br>
+						<input type="text" maxlength="2" class="form-control" id="score" placeholder="Enter Score (max 10)">
+					</div>
+		</td>
+		<td>
+					<div class="col-sm-12 ">
+						
+						<textarea class="form-control" id="comment" name="comment" placeholder="Comment Here" rows="4"></textarea>
+					</div>
+		</td>
+		<td>
+		
+							<div class="col-sm-12 ">
+							
+								<label class="radio text-success">
+									&nbsp;<input type="radio" name="result">SELECTED
+								</label>
+								<hr>
+								<label class="radio text-danger">
+									&nbsp;<input type="radio" name="result">REJECTED
+								</label>
+							</div>
+		</td>
+		<td>
+			<br><br>
+			<button type="submit" class="btn btn-success">SUBMIT</button>
+		</td>
+		</form>
+      </tr>
+	  <tr>
+        <form role="form" >
+        <td>4</td>
+        <td>AMAR KUMAR</td>
+		<td>
+			<img src="../images/amar.jpg" class="img-thumbnail text-center" alt="photograph" width="94px" height="22px">
+		</td>
+		<td>
+					
+					<div class="col-sm-12">
+						<br><br>
+						<input type="text" maxlength="2" class="form-control" id="score" placeholder="Enter Score (max 10)">
+					</div>
+		</td>
+		<td>
+					<div class="col-sm-12 ">
+						
+						<textarea class="form-control" id="comment" name="comment" placeholder="Comment Here" rows="4"></textarea>
+					</div>
+		</td>
+		<td>
+		
+							<div class="col-sm-12 ">
+							
+								<label class="radio text-success">
+									&nbsp;<input type="radio" name="result">SELECTED
+								</label>
+								<hr>
+								<label class="radio text-danger">
+									&nbsp;<input type="radio" name="result">REJECTED
+								</label>
+							</div>
+		</td>
+		<td>
+			<br><br>
+			<button type="submit" class="btn btn-success">SUBMIT</button>
+		</td>
+		</form>
+      </tr>
+	  <tr>
+        <form role="form" >
+        <td>5</td>
+        <td>ANIKET PENDSE</td>
+		<td>
+			<img src="../images/aniket.jpg" class="img-thumbnail text-center" alt="photograph" width="94px" height="22px">
+		</td>
+		<td>
+					
+					<div class="col-sm-12">
+						<br><br>
+						<input type="text" maxlength="2" class="form-control" id="score" placeholder="Enter Score (max 10)">
+					</div>
+		</td>
+		<td>
+					<div class="col-sm-12 ">
+						
+						<textarea class="form-control" id="comment" name="comment" placeholder="Comment Here" rows="4"></textarea>
+					</div>
+		</td>
+		<td>
+		
+							<div class="col-sm-12 ">
+							
+								<label class="radio text-success">
+									&nbsp;<input type="radio" name="result">SELECTED
+								</label>
+								<hr>
+								<label class="radio text-danger">
+									&nbsp;<input type="radio" name="result">REJECTED
+								</label>
+							</div>
+		</td>
+		<td>
+			<br><br>
+			<button type="submit" class="btn btn-success">SUBMIT</button>
+		</td>
+		</form>
+      </tr>
+	  <tr>
+        <form role="form" >
+        <td>6</td>
+        <td>HIMANSHU NAMDEO</td>
+		<td>
+			<img src="../images/himanshu.jpg" class="img-thumbnail text-center" alt="photograph" width="94px" height="22px">
+		</td>
+		<td>
+					
+					<div class="col-sm-12">
+						<br><br>
+						<input type="text" maxlength="2" class="form-control" id="score" placeholder="Enter Score (max 10)">
+					</div>
+		</td>
+		<td>
+					<div class="col-sm-12 ">
+						
+						<textarea class="form-control" id="comment" name="comment" placeholder="Comment Here" rows="4"></textarea>
+					</div>
+		</td>
+		<td>
+		
+							<div class="col-sm-12 ">
+							
+								<label class="radio text-success">
+									&nbsp;<input type="radio" name="result">SELECTED
+								</label>
+								<hr>
+								<label class="radio text-danger">
+									&nbsp;<input type="radio" name="result">REJECTED
+								</label>
+							</div>
+		</td>
+		<td>
+			<br><br>
+			<button type="submit" class="btn btn-success">SUBMIT</button>
+		</td>
+		</form>
+      </tr>
+	  <tr>
+        <form role="form" >
+        <td>7</td>
+        <td>MAYANK ROHIRA</td>
+		<td>
+			<img src="../images/mayank.jpg" class="img-thumbnail text-center" alt="photograph" width="94px" height="22px">
+		</td>
+		<td>
+					
+					<div class="col-sm-12">
+						<br><br>
+						<input type="text" maxlength="2" class="form-control" id="score" placeholder="Enter Score (max 10)">
+					</div>
+		</td>
+		<td>
+					<div class="col-sm-12 ">
+						
+						<textarea class="form-control" id="comment" name="comment" placeholder="Comment Here" rows="4"></textarea>
+					</div>
+		</td>
+		<td>
+		
+							<div class="col-sm-12 ">
+							
+								<label class="radio text-success">
+									&nbsp;<input type="radio" name="result">SELECTED
+								</label>
+								<hr>
+								<label class="radio text-danger">
+									&nbsp;<input type="radio" name="result">REJECTED
+								</label>
+							</div>
+		</td>
+		<td>
+			<br><br>
+			<button type="submit" class="btn btn-success">SUBMIT</button>
+		</td>
+		</form>
+      </tr>
+	  
+    </tbody>
+  </table>
+	</div>
+	
+</div>
+
+</div>
+
+
+<!-- Footer -->
+<footer class="text-center container-fluid">
+  
+  
+  <p> Copyright &copy; &nbsp;www.reconnoitre.com</p> 
+</footer>
+
+
+
+
+
+</body>
+</html>

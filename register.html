@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>REGISTER | RECONNOITRE</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <style>
+  body {
+      position: relative;
+		font: 400 15px/1.8 Lato, sans-serif;
+      color: #777;
+	  position:relative;
+	  height:100%;	  
+  }
+  .container {
+      padding: 80px 40px;
+  }
+  .navbar{
+      font-family: Montserrat, sans-serif;
+      margin-bottom: 0;
+      background-color: #2d2d30;
+      border: 0;
+      font-size: 11px !important;
+      letter-spacing: 2px;
+      opacity: 0.9;
+	  font-weight:bold;
+  }
+  .navbar li a, .navbar .navbar-brand { 
+      color: #d5d5d5 !important;
+  }
+  .navbar-nav li a:hover {
+      color: #fff !important;
+	  background-color: #fff;
+  }
+  .navbar-nav li.active a {
+      color: #fff !important;
+	  font-size: 13px !important;
+      background-color: #29292c !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+  }
+  .open .dropdown-toggle {
+      color: #fff;
+      background-color: #555 !important;
+  }
+  .dropdown-menu li a {
+      color: #000 !important;
+  }
+  .dropdown-menu li a:hover {
+      background-color: red !important;
+  }
+  footer {
+      background-color: #2d2d30;
+      color: #f5f5f5;
+      padding: 32px;
+  }
+  footer a {
+      color: #f5f5f5;
+  }
+  footer a:hover {
+      color: #777;
+      text-decoration: none;
+  }  
+  .form-control {
+      border-radius: 5px;
+  }
+ </style>
+</head>
+
+<body>
+
+<nav class="navbar navbar-default  navbar-fixed-top" >
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="index.html">Reconnoitre</a>
+    </div>
+    <div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">HOME</a></li>
+        <li><a href="index.html#section2">NEWS ROOM</a></li>
+        <li><a href="index.html#section3">OUR PROCESS</a></li>
+		<li><a href="index.html#section4">ABOUT US</a></li>
+        <li><a href="index.html#section5">CONTACT</a></li>
+          
+        </ul>
+		<ul class="nav navbar-nav navbar-right">
+        <li><a id="register" name="register" href="register.html"><span class="glyphicon glyphicon-user"></span> REGISTER</a></li>
+        <li><a href="loginas.html" id="login"><span class="glyphicon glyphicon-log-in"></span> LOGIN</a></li>
+      </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- register form -->
+<div class="container text-center">
+<div class="row">
+    <div class="col-sm-1"></div>
+	<div class="col-sm-10">
+<div class="panel panel-primary">
+      <div class="panel-heading"><h2><span class="glyphicon glyphicon-user"></span>  REGISTRATION FORM</h2></div>
+      <div class="panel-body">
+	  <br>
+  
+  <form class="form-horizontal" role="form">
+	<div class="form-group">
+      <label class="control-label col-sm-3" for="firstname">First Name:</label>
+      <div class="col-sm-7">
+        <input type="text" maxlength="20" class="form-control" id="firstname" placeholder="Enter First Name">
+      </div>
+    </div>
+	<div class="form-group">
+      <label class="control-label col-sm-3" for="lastname">Last Name:</label>
+      <div class="col-sm-7">
+        <input type="text" maxlength="20" class="form-control" id="lastname" placeholder="Enter Last Name">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-3" for="email">Email:</label>
+      <div class="col-sm-7">
+        <input type="email" maxlength="40" class="form-control" id="email" placeholder="Enter email">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-3" for="pwd">Password:</label>
+      <div class="col-sm-7">          
+        <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+      </div>
+    </div>
+	<div class="form-group">
+      <label class="control-label col-sm-3" for="confirm-pwd">Confirm Password:</label>
+      <div class="col-sm-7">          
+        <input type="password" class="form-control" id="confirm-pwd" placeholder="Confirm password">
+      </div>
+    </div>
+    <div class="form-group">        
+      <div class="col-sm-offset-0 col-sm-10">
+        <div class="checkbox">
+          <label><input type="checkbox"> I accept <a href="#">Terms & Conditions</a></label>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">        
+      <div class="col-sm-offset-1 col-sm-10">
+        <button type="submit" class="btn btn-primary">REGISTER</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<div class="panel-footer">
+
+<br>
+<label>Already Registered ?</label>&nbsp;&nbsp;
+        <button type="submit" class="btn btn-danger"><a href="login.html" style="color:#FFF">LOGIN</a></button>
+     <br> <br>
+</div>
+
+
+</div>
+</div>
+<div class="col-sm-0"></div>
+</div>
+    </div>
+
+
+<!-- Footer -->
+<footer class="text-center container-fluid">
+  
+  <div class="row">
+    <div class="col-sm-3">
+	<ul class="list-unstyled">
+		<li><a href="">FAQ's</a></li>
+		<li><a href="">Terms & Conditions</a></li>
+		
+	</ul>
+	</div>
+	<div class="col-sm-3">
+	<ul class="list-unstyled">
+		<li><a href="">Press/Media/Gallery</a></li>
+		<li><a href="">Site Map</a></li>
+	</ul>
+	</div>
+	
+	<div class="col-sm-6">
+		<p><b>!!! &nbsp<u>FOLLOW US</u>&nbsp !!!</b></p>
+		<!-- SOCIAL-PLUGIN starts here -->
+<div id="social-plugin">
+			
+			<div class="social-plugin-content">
+			<center>
+			<a href="https://www.facebook.com" target="_blank"><img src="images/facebook.png" onmouseover="this.src='images/facebook-hover.png'" onmouseout="this.src='images/facebook.png'" width="40px" height="40px" class="icon" /></a>
+			
+			<a href="https://www.twitter.com" target="_blank"><img src="images/twitter.png" onmouseover="this.src='images/twitter-hover.png'" onmouseout="this.src='images/twitter.png'" width="40px" height="40px" class="icon"/></a>
+			
+			<a href="https://in.linkedin.com/" target="_blank"><img src="images/linkedin.png" onmouseover="this.src='images/linkedin-hover.png'" onmouseout="this.src='images/linkedin.png'" width="40px" height="40px" class="icon"/></a>
+			
+			
+			
+				<a href="https://plus.google.com/" target="_blank"><img src="images/googleplus.png" onmouseover="this.src='images/googleplus-hover.png'" onmouseout="this.src='images/googleplus.png'" width="40px" height="40px" class="icon"/></a>
+				
+				<a href="" target="_blank"><img src="images/mail.png" onmouseover="this.src='images/mail-hover.png'" onmouseout="this.src='images/mail.png'" width="40px" height="40px" class="icon"/></a>
+										
+					</center>
+			</div>
+		
+		</div>
+		
+		
+
+	
+<!-- SOCIAL-PLUGIN end here -->
+	</div>
+   </div><br>
+  <p> Copyright &copy;<a href="index.html" data-toggle="tooltip" title="Visit reconnoitre"> &nbsp;www.reconnoitre.com</a></p> 
+</footer>
+
+
+
+
+
+</body>
+</html>
